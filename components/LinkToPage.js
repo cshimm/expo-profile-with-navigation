@@ -3,20 +3,24 @@ import {Pressable, StyleSheet, Text} from "react-native";
 
 const LinkToPage = ({pageName, path}) => {
     return <Link style={[styles.link, styles.border]} href={path}>
-        <Pressable style={styles.centered}>
+        <Pressable>
             <Text>{pageName}</Text>
         </Pressable>
     </Link>
-}
+};
 
 const styles = StyleSheet.create({
     link: {
-        width: 100,
-        padding: 3
+        flexDirection: 'row',
+        width: "75%",
+        height: 50,
+        padding: 10,
+        textAlign: 'center',
+        marginBottom: 5
     },
     border: {
         borderWidth: 2,
-        marginBottom: 5
+        borderRadius:20
     },
 })
 
