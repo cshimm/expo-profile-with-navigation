@@ -1,4 +1,4 @@
-import {router, useNavigation} from "expo-router";
+import {useNavigation} from "expo-router";
 import {Pressable, Text} from "react-native";
 
 const BackButton = () => {
